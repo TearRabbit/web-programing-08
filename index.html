@@ -4,14 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Userのプロフィール</title>
+    <style>
+        body {
+            display: flex; /* flexboxを使って中央揃え */
+            justify-content: center; /* 水平方向の中央 */
+            align-items: center; /* 垂直方向の中央 */
+            min-height: 100vh; /* 画面全体の高さを利用 */
+            margin: 0; /* デフォルトのマージンをリセット */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* フォントの指定 */
+            background-color: #f4f4f4; /* 背景色 */
+            color: #333; /* 文字色 */
+        }
+
+        article {
+            background-color: #ffffff; /* 白い背景 */
+            padding: 40px 60px; /* 内側の余白 */
+            border-radius: 10px; /* 角を丸くする */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 影を追加 */
+            text-align: center; /* テキストを中央揃え */
+            max-width: 800px; /* 最大幅を設定 */
+            width: 90%; /* レスポンシブ対応 */
+            box-sizing: border-box; /* paddingとborderをwidthに含める */
+        }
+
+        h1 {
+            color: #0056b3; /* 見出しの色 */
+            margin-bottom: 20px; /* 下のマージン */
+            font-size: 2.5em; /* フォントサイズ */
+        }
+
+        h2 {
+            color: #0056b3;
+            margin-top: 30px; /* 上のマージン */
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+
+        p {
+            line-height: 1.6; /* 行の高さ */
+            margin-bottom: 10px; /* 段落の下のマージン */
+            font-size: 1.1em;
+        }
+
+        /* 水平線 */
+        hr {
+            border: none;
+            border-top: 1px solid #eee;
+            margin: 30px 0;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello, World!</h1>
-
-    ---
-
-    <h2>プロフィール</h2>
-    <p>名前：User</p>
-    <p>所属：A大学 B学部 C学科</p>
+    <article>
+        <h1>Hello, World!</h1>
+        <hr>
+        <h2>プロフィール</h2>
+        <p>名前：User</p>
+        <p>所属：A大学 B学部 C学科</p>
+    </article>
 </body>
 </html>
